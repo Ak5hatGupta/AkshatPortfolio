@@ -1,0 +1,93 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 body \{\
+    font-family: Arial, sans-serif;\
+    margin: 0;\
+    padding: 0;\
+    background-color: #0a0a0a;\
+    color: #ffffff;\
+    overflow-x: hidden;\
+\}\
+\
+.preloader \{\
+    position: fixed;\
+    width: 100%;\
+    height: 100%;\
+    background: black;\
+    display: flex;\
+    justify-content: center;\
+    align-items: center;\
+    font-size: 2em;\
+    color: #ff9800;\
+    z-index: 1000;\
+\}\
+\
+header \{\
+    background: linear-gradient(90deg, #ff9800, #e65100);\
+    padding: 30px;\
+    text-align: center;\
+    font-size: 28px;\
+    font-weight: bold;\
+    text-transform: uppercase;\
+    animation: fadeIn 2s ease-in-out;\
+\}\
+\
+.container \{\
+    max-width: 900px;\
+    margin: 40px auto;\
+    padding: 20px;\
+    background: #121212;\
+    border-radius: 10px;\
+    box-shadow: 0 0 20px rgba(255, 152, 0, 0.4);\
+    opacity: 0;\
+    transform: translateY(30px);\
+    transition: opacity 1s ease-out, transform 1s ease-out;\
+\}\
+\
+.container.visible \{\
+    opacity: 1;\
+    transform: translateY(0);\
+\}\
+\
+h2 \{\
+    border-bottom: 2px solid #ff9800;\
+    padding-bottom: 5px;\
+\}\
+\
+ul \{\
+    list-style-type: none;\
+    padding: 0;\
+\}\
+\
+ul li \{\
+    padding: 10px;\
+    background: rgba(255, 152, 0, 0.2);\
+    margin-bottom: 10px;\
+    border-radius: 5px;\
+    transition: transform 0.3s ease-in-out;\
+\}\
+\
+ul li:hover \{\
+    transform: scale(1.05);\
+    background: rgba(255, 152, 0, 0.4);\
+\}\
+\
+.contact a \{\
+    color: #ff9800;\
+    text-decoration: none;\
+\}\
+\
+.contact a:hover \{\
+    text-decoration: underline;\
+\}\
+\
+@keyframes fadeIn \{\
+    from \{ opacity: 0; \}\
+    to \{ opacity: 1; \}\
+\}\
+}
